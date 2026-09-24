@@ -1,0 +1,12 @@
+name: Check research
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    uses: sm-th/sw/.github/workflows/check.yml@main

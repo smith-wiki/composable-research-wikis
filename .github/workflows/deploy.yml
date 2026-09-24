@@ -1,0 +1,21 @@
+name: Deploy research
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # Pages serves public repositories only; a research deploys once it is published.
+    if: github.event.repository.visibility == 'public'
+    uses: sm-th/sw/.github/workflows/deploy.yml@main
