@@ -79,11 +79,11 @@
         "uv2nix": "uv2nix"
       },
       "locked": {
-        "lastModified": 1790268273,
-        "narHash": "sha256-KTAmZLd9W/SAy//+w+yNmkPEvyUcVT7Q89JUmhIlRBk=",
+        "lastModified": 1790268724,
+        "narHash": "sha256-c577XPbd7JbZcCcj5/GL2+bE4pChr5LGztgzfVjaZlo=",
         "owner": "sm-th",
         "repo": "sw",
-        "rev": "76f45f282ef9234b1ee114c95bb57c05387d8167",
+        "rev": "929bce50d00d12c3d1aadcffde905b1d616f1f78",
         "type": "github"
       },
       "original": {

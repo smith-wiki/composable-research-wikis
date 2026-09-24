@@ -1,0 +1,8 @@
+---
+title: Pages that every agent run may edit accumulate until they no longer mean one thing
+summary: In an agent-maintained wiki, one ingest rewrites many shared pages, so shared pages absorb context from every run and drift faster than anyone can review them.
+---
+
+The LLM wiki pattern has the agent file each new source into the existing pages: one source can update 10 to 15 of them, and periodic lint passes look for contradictions, stale claims, and orphans that this produces ([Karpathy, n.d.](../../sources/karpathy-llm-wiki/)). The first Smith Wiki, maintained this way by agents, held 172 pages at its last commit, with several pages per idea: `ephemeral-agent`, `disposable-agent-body`, `self-reaping-agent`, `immutable-agent-environments`, `per-task-agent-sandboxing`, and `layered-agent-isolation` around one design, and `ai-native-company`, `ai-native-companies`, `ai-native-company-stack`, and `company-as-code` around another ([Smith Wiki, n.d.](../../sources/retired-smith-wiki-tree/)).
+
+**Inference:** a page every run may touch has no single author or moment, so each run adds its own framing, and the edits outpace any review. Cleaning such pages does not converge: the next run adds more. What does converge is not sharing mutable pages at all, keeping units [immutable and attributed](../a-unifying-merge-needs-immutable-units-identifiers-and-provenance/) and [curating by selection](../curating-by-selection-scales-where-curating-pages-does-not/). The duplicate names themselves have a separate cause, [free naming](../agents-that-name-things-freely-produce-synonym-clusters/).
